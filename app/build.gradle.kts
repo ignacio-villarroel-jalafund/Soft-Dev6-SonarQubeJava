@@ -7,7 +7,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
-    id("org.sonarqube") version "5.1.0.4882"
+    id ("org.sonarqube") version "4.4.1.3373"
 }
 
 repositories {
@@ -37,12 +37,9 @@ application {
 }
 
 sonar {
-    properties {
-        property("sonar.projectKey", "Soft-Ded-SonarQubeJava")
-        property("sonar.projectName", "Soft-Ded-SonarQubeJava")
-        property("sonar.projectVersion", "1.0")
-        property("sonar.sources", "src/main/java")
-        property("sonar.host.url", "http://localhost:9000")
-        property("sonar.token", System.getenv("SONAR_TOKEN"))
-    }
+  properties {
+    property ("sonar.projectKey", "ignacio-villarroel-jalafund_Soft-Dev6-SonarQubeJava")
+    property ("sonar.organization", "ignacio-villarroel-jalafund")
+    property ("sonar.host.url", "https://sonarcloud.io")
+  }
 }
